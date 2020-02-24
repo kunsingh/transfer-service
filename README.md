@@ -130,5 +130,5 @@ Money Transfer cant be performed due to lack of funds on the account.
 One of the party accounts doesn't exist:
 **Status: 400 Bad Request**
 ```javascript
-Account(s) doesnt exist. | Source: null, Target: Account{id=2, balance=10}
+Status 204 Account not found for given id: 5
 ```
