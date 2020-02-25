@@ -9,8 +9,13 @@ Application starts webserver on http://localhost:8080 by default
  - **JUnit 5** - as a unit test framework
  - **Rest Assured** - for API tests
 
-Application may be started from standalone jar:
+Application may be started from main class or standalone jar:
+
 ```sh
+com.revolut.exercise.ApplicationStarter
+
+OR 
+
 java -jar transfer-service-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 or as a maven goal
@@ -128,7 +133,7 @@ Money Transfer cant be performed due to lack of funds on the account.
 ```
 
 One of the party accounts doesn't exist:
-**Status: 400 Bad Request**
+**Status: 204 Bad Request**
 ```javascript
 Status 204 Account not found for given id: 5
 ```
